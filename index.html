@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Card</title>
+    <link href='https://i.imgur.com/XfM1dB7.jpg' rel='shortcut icon' type='image/x-icon'/>
+    <meta content='https://i.imgur.com/eFQCkhY.jpg' property='og:image'/>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/20cee36f21.js" crossorigin="anonymous"></script>
+</head>
+<body id="body" class="theme--dark">
+    <input type="checkbox" id="menu">
+    <input type="checkbox" id="night">
+    <div id="container">
+        <div class="header">
+            <label for="night" class="night-mode" onclick="enableNight()">
+                <i class="fa-solid fa-moon"></i>
+            </label>
+        </div>
+        <section class="left-section">
+            <img src="profile.jpg" alt="" class="profile-pic">
+            <div class="profile-details">
+                <span class="profile-maps">
+                    <i class="fa-solid fa-location-dot"></i> Phu Xuan, Hue. Viet Nam
+                </span>
+                <p class="profile-name">Mỹ Huệ Trần</p>
+                <span class="profile-summary">A  student at Hue University of Education with the dream of becoming a passionate and hyperactive teacher</span>
+                <a href="" class="profile-cv">Download CV</a>
+            </div>
+            <div class="profile-pils">
+                <span class="pils"><a href="https://www.facebook.com/amandamyhue.tran.952002/"><i class="fa-brands fa-facebook"></i> Facebook</a></span>
+                <span class="pils"><a href="https://www.tiktok.com/@myhuetran95"><i class="fa-brands fa-tiktok"></i> TikTok</a></span>
+                <span class="pils"><a href="https://www.instagram.com/ym_euh_nart"><i class="fa-brands fa-instagram"></i> Instagram</a></span>
+                <span class="pils"><a href="https://myhuetran.wixsite.com/my-site?fbclid=IwAR3LNU0X2ENwXY3ErZSUVyNAnYJXLSFOPWVs7uYRn1Ksp6NzE7cJcylggbM"><i class="fa-brands fa-wix"></i> Wix</a></span>
+            </div>
+        </section>
+        <div class="front-smooth"></div>
+    </div>
+    <script>
+        let enableNight = () => {
+            var body = document.getElementById("body");
+            if (body.classList.contains('theme--light')) {
+                body.classList.remove('theme--light');
+                body.classList.add('theme--dark');
+            } else {
+                body.classList.remove('theme--dark');
+                body.classList.add('theme--light');
+            }
+        }
+    </script>
+</body>
+</html>
